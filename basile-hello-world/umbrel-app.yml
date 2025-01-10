@@ -2,7 +2,7 @@ manifestVersion: 1
 id: basile-hello-world
 name: Hello World
 tagline: Replace this tagline with your app's tagline
-icon: https://files.basile.se/api/shares/QwNzEzN/files/4708b3db-2d84-42b7-8acf-9f94745ac206?download=false
+icon: https://files.basile.se/api/shares/QwNzEzN/files/099de86c-cdda-42de-95fb-133c46b7469f?download=false
 category: Development
 version: "1.0.0"
 port: 4000
