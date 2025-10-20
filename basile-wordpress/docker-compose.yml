@@ -8,7 +8,10 @@ services:
       - default
     volumes:
       - wordpress_hidden_service_data:/var/lib/tor/hidden_service
-    command: -s "80;wordpress_app_1:80"
+    command: >
+      -v
+      -H
+      -s "80:wordpress_app_1:80"
 
 volumes:
   wordpress_hidden_service_data:
