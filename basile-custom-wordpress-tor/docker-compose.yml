@@ -3,17 +3,16 @@ version: "3.7"
 services:
   tor:
     image: dperson/torproxy
-    container_name: wordpress-tor
+    container_name: custom-wordpress-tor
     restart: unless-stopped
-    volumes:
-      - ${APP_DATA_DIR}/tor:/etc/tor
-      - wordpress_tor_data:/var/lib/tor
     networks:
       - default
-    command: -f /etc/tor/torrc
+    volumes:
+      - wordpress_hidden_service_data:/var/lib/tor/hidden_service
+    command: -s "80;wordpress_app_1:80"
 
 volumes:
-  wordpress_tor_data:
+  wordpress_hidden_service_data:
 
 networks:
   default:
