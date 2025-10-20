@@ -1,0 +1,30 @@
+manifestVersion: 1
+id: custom-wordpress-tor
+name: Custom Wordpress Tor
+tagline: Bring your WordPress site to the dark web — securely and anonymously.
+icon: http://192.168.0.132:6453/api/shares/6uSfUMmb/files/b261c5af-a268-4ae7-b890-2301f0704507?download=false
+category: Development
+version: "1.0.0"
+port: 4040
+description: >-
+  Add your app's description here.
+  In short, it:
+  - Runs a Tor daemon
+  - Creates a hidden service that maps:
+  - Port 80 on .onion → WordPress container’s HTTP port
+  - Outputs a unique .onion hostname
+  - Lets users access your WordPress site anonymously via Tor
+
+developer: Umbrel
+website: https://umbrel.com
+submitter: Umbrel
+submission: https://github.com/getumbrel/umbrel-hello-world-app
+repo: https://github.com/getumbrel/umbrel-hello-world-app
+support: https://github.com/getumbrel/umbrel-hello-world-app/issues
+
+releaseNotes: >-
+  Add what's new in the latest version of your app here.
+dependencies: []
+path: ""
+defaultUsername: ""
+defaultPassword: ""

@@ -1,0 +1,13 @@
+version: "0.1"
+
+services:
+  tor:
+    image: dperson/torproxy
+    restart: unless-stopped
+    volumes:
+      - wordpress_hidden_service_data:/var/lib/tor/hidden_service
+    network_mode: umbrel_main_network
+    command: -s "80;wordpress_app_1:80"
+
+volumes:
+  wordpress_hidden_service_data:
