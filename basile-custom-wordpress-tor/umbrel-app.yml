@@ -6,14 +6,6 @@ icon: http://192.168.0.132:6453/api/shares/6uSfUMmb/files/b261c5af-a268-4ae7-b89
 category: Development
 version: "1.0.0"
 port: 4040
-description: >-
-  Add your app's description here.
-  In short, it:
-  - Runs a Tor daemon
-  - Creates a hidden service that maps:
-  - Port 80 on .onion → WordPress container’s HTTP port
-  - Outputs a unique .onion hostname
-  - Lets users access your WordPress site anonymously via Tor
 
 developer: Umbrel
 website: https://umbrel.com
