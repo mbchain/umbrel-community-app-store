@@ -3,7 +3,6 @@ version: "3.7"
 services:
   tor:
     image: dperson/torproxy
-    container_name: custom-wordpress-tor
     restart: unless-stopped
     networks:
       - default
