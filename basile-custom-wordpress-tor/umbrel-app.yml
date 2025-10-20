@@ -6,6 +6,11 @@ icon: http://192.168.0.132:6453/api/shares/6uSfUMmb/files/b261c5af-a268-4ae7-b89
 category: Development
 version: "1.0.0"
 port: 4040
+description: >-
+  Add your app's description here.
+
+
+  You can also add newlines!
 
 developer: Umbrel
 website: https://umbrel.com
@@ -13,7 +18,10 @@ submitter: Umbrel
 submission: https://github.com/getumbrel/umbrel-hello-world-app
 repo: https://github.com/getumbrel/umbrel-hello-world-app
 support: https://github.com/getumbrel/umbrel-hello-world-app/issues
-
+gallery:
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
+  - https://i.imgur.com/yyVG0Jb.jpeg
 releaseNotes: >-
   Add what's new in the latest version of your app here.
 dependencies: []
