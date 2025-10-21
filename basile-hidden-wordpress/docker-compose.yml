@@ -1,7 +1,6 @@
 services:
   tor_hidden_service:
     build: ./tor-proxy
-    container_name: tor_hidden_service
     restart: unless-stopped
     # Pass the container name and port you want to expose via environment variables
     environment:
