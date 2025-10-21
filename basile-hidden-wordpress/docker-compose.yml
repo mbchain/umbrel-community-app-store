@@ -4,8 +4,8 @@ services:
     restart: unless-stopped
     # Pass the container name and port you want to expose via environment variables
     environment:
-      TARGET_CONTAINER: ${TARGET_CONTAINER:-wordpress_app_1}
-      TARGET_PORT: ${TARGET_PORT:-80}
+      TARGET_CONTAINER: wordpress_app_1
+      TARGET_PORT: 80
     volumes:
       - tor_hidden_service_data:/var/lib/tor/hidden_service
     networks:
