@@ -1,0 +1,21 @@
+services:
+  tor_hidden_service:
+    build: ./tor-proxy
+    container_name: tor_hidden_service
+    restart: unless-stopped
+    # Pass the container name and port you want to expose via environment variables
+    environment:
+      TARGET_CONTAINER: ${TARGET_CONTAINER:-wordpress_app_1}
+      TARGET_PORT: ${TARGET_PORT:-80}
+    volumes:
+      - tor_hidden_service_data:/var/lib/tor/hidden_service
+    networks:
+      - main_network
+
+networks:
+  main_network:
+    external: true # use the same network as your target container (e.g. Umbrel)
+    name: umbrel_main_network # change this to match your actual network name
+
+volumes:
+  tor_hidden_service_data:

@@ -1,0 +1,3 @@
+HiddenServiceDir /var/lib/tor/hidden_service/
+HiddenServicePort 80 ${TARGET_CONTAINER}:${TARGET_PORT}
+Log notice stdout
